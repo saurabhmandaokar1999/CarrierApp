@@ -6,7 +6,7 @@ export default function Home() {
    <div>
      <h1>Carrier Coach</h1>
      <br/>
-     <Button>Click me</Button>
+     <Button>Hello</Button>
    </div>
   );
 
