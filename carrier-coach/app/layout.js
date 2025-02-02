@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 export const metadata = {
   title: "AI Carrier Coach",
@@ -12,7 +13,10 @@ const inter = Inter({subset:["latin"]});
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+    appearance={{
+      baseTheme: dark,
+    }}>
     <html lang="en">
       <body
         className={`${inter.className}`}
@@ -30,7 +34,7 @@ export default function RootLayout({ children }) {
             {/*Footer*/}
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center">
-                <p>Made By Saurabh Mandaokar</p>
+                <p>Made With Love ❤️ By Saurabh Mandaokar</p>
               </div>
             </footer>
           </ThemeProvider>
