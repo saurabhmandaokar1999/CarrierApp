@@ -14,7 +14,7 @@ import { ChevronDown, FileTextIcon, GraduationCap, GraduationCapIcon, LayoutDash
 
 const Header = () => {
     return (
-        <header suppressHydrationWarning className="fixed top-0 w-full border-b bg-gackground/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
+        <header className="fixed top-0 w-full border-b bg-gackground/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
             <nav className='container mx-auto flex justify-between items-center h-16 py-4 px-4'>
                 <Link href="/">
                     <Image 
@@ -36,7 +36,7 @@ const Header = () => {
                             </Button>
                         </Link> 
                         <DropdownMenu>
-                            <DropdownMenuTrigger>
+                            <DropdownMenuTrigger asChild>
                                 <Button>
                                     <StarsIcon className="h-4 w-4"/>
                                     <span className="hidden md:block">
