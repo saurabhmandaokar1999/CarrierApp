@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const HeroSection = () => {
   const heroImageRef = useRef(null);
@@ -47,16 +46,32 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
-        <div className="hero-image-wrapper mt-5 md-5 md:mt-0">
-          <div ref={heroImageRef} className="hero-image">
-            <Image 
-              src="/Banner.jpeg" 
-              alt="Banner" 
-              width={980} 
-              height={720}
+        <div className="hero-video-wrapper mt-5 md-5 md:mt-0">
+          <div className="inline-flex items-center border p-2 rounded-md mb-2">
+            <p className="text-sm text-muted-foreground mr-2">This is an AI generated video. Please unmute to listen to audio.</p>
+            <Button 
+              onClick={() => {
+                const videoElement = heroImageRef.current.querySelector('video');
+                videoElement.muted = !videoElement.muted;
+                
+              }}
+              className="mute-button"
+            >
+             Play Sound <span style={{ color: 'white' }}>&#x1F50A;</span> 
+            </Button>
+          </div>
+          <div ref={heroImageRef} className="hero-video">
+            <video 
+              src="/Banner.mp4" 
+              width="980" 
+              height="720" 
               className="rounded-lg shadow-2x1 border mx-auto"
-              priority
-            /> 
+              autoPlay 
+              loop 
+              muted
+              controls
+              controlsList="nodownload "
+            />
           </div>
         </div>
       </div>
