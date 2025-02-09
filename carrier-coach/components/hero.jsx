@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="w-full pt-36 md:pt-48 pb-10">
+    <section className="w-full pt-36 md:pt-48 pb-10 heading-animation">
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
           <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title">
@@ -50,6 +50,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center border p-2 rounded-md mb-2">
             <p className="text-sm text-muted-foreground mr-2">This is an AI generated video. Please unmute to listen to audio.</p>
             <Button 
+            variant="secondary"
               onClick={() => {
                 const videoElement = heroImageRef.current.querySelector('video');
                 videoElement.muted = !videoElement.muted;

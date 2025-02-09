@@ -23,15 +23,27 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {features.map((feature, index) => {
         return (
-          <Card key={index}>
-            <CardContent>
-              <div>{feature.icon}</div>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
+          <Card key={index}
+          className="border-2 hover:border-primary transition-colors duration-300"
+          >
+            <CardContent className="pt-6 text-center flex flex-col items-center"> 
+              <div className="flex flex-col items-center justify-center">
+                {feature.icon}</div>
+              <h3 className="text-xl font-bold mb-2">
+                {feature.title}</h3>
+              <p className="text-muted-foreground">
+                {feature.description}</p>
             </CardContent>
           </Card>
         )
       })}</div>
+    </div>
+   </section>
+   <section className="w-full py-12 md:py-24 bg-muted/50">
+    <div className="container mx-auto px-4 md:px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        
+      </div>
     </div>
    </section>
    </div>

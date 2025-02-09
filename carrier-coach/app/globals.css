@@ -116,3 +116,17 @@ perspective: 1000px;
 .hero-image.scrolled{
   transform: rotateX(0deg) scale(1) translateY(40px);
 }
+@keyframes slideIn {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.heading-animation {
+  animation: slideIn 1s ease-out;
+}
