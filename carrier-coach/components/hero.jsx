@@ -36,15 +36,15 @@ const HeroSection = () => {
         </div>
         <div className="display-flex justify-center space-x-4">
           <Link href="/dashboard">
-            <Button size="lg" className="px-8">
+            <Button size="lg" className="h-11 mt-5 animate-bounce">
               Get Started
             </Button>
           </Link>
-          <Link href="/dashboard">
-            <Button size="lg" className="px-8" variant="outline">
-              Get Started
+           <Link href="/dashboard">
+            <Button size="lg" className="h-11 mt-5 animate-bounce"variant="outline">
+              Creator Page
             </Button>
-          </Link>
+          </Link> 
         </div>
         <div className="hero-video-wrapper mt-5 md-5 md:mt-0">
           <div className="inline-flex items-center border p-2 rounded-md mb-2">
@@ -63,7 +63,7 @@ const HeroSection = () => {
           </div>
           <div ref={heroImageRef} className="hero-video">
             <video 
-              src="/Banner.mp4" 
+              src="/Banner.mp41" 
               width="980" 
               height="720" 
               className="rounded-lg shadow-2x1 border mx-auto"
@@ -71,7 +71,7 @@ const HeroSection = () => {
               loop 
               muted
               controls
-              controlsList="nodownload "
+              controlsList="nodownload"
             />
           </div>
         </div>
