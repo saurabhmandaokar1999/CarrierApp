@@ -63,7 +63,7 @@ const HeroSection = () => {
           </div>
           <div ref={heroImageRef} className="hero-video">
             <video 
-              src="/Banner.mp41" 
+              src="/Banner.mp4" 
               width="980" 
               height="720" 
               className="rounded-lg shadow-2x1 border mx-auto"
