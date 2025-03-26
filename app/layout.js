@@ -10,7 +10,7 @@ export const metadata = {
   title: "AI Carrier Coach",
   description: "Helping people in their career",
 };
-const inter = Inter({subset:["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
