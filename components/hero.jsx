@@ -40,11 +40,6 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
-           <Link href="/dashboard">
-            <Button size="lg" className="h-11 mt-5 animate-bounce"variant="outline">
-              Creator Page
-            </Button>
-          </Link> 
         </div>
         <div className="hero-video-wrapper mt-5 md-5 md:mt-0">
           <div className="inline-flex items-center border p-2 rounded-md mb-2">
